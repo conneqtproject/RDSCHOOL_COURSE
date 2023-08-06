@@ -44,18 +44,9 @@
 			</c:if>
 			<c:if test="${empty userObj }">
 				<div class="dropdown">
-					<button class="btn btn-success dropdown-toggle" type="button"
-						id="dropdownMenuButton" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false">
-						<i class="fa-solid fa-right-to-bracket"></i> Login
-					</button>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="admin_login.jsp">Admin Login</a> <a
-							class="dropdown-item" href="manager_login.jsp">Manager Login</a>
-						<a class="dropdown-item" href="customer_login.jsp">User
-							Login</a>
-					</div>
-					<a href="signup.jsp" class="btn btn-primary"><i
+					<a href="admin_login.jsp" class="btn btn-primary"><i
+						class="fa-solid fa-right-to-bracket"></i> Login</a>&nbsp
+					<a href="signup.jsp" class="btn btn-success"><i
 						class="fa-solid fa-user-plus"></i> Register</a>
 				</div>
 

@@ -8,8 +8,8 @@
 
 
 <div class="container-fluid p-3">
-<div class="row">
-	<div class="col-md-4 text-success ">
+	<div class="row">
+		<div class="col-md-4 text-success ">
 			<h1>
 				<i class="fa-solid fa-business-time"></i> RD School
 			</h1>
@@ -21,23 +21,32 @@
 				<button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
 			</form>
 		</div>
-		
+			<c:if test="${not empty managerobj }">
 		<div class="col-md-3">
-	
-				<div class="dropdown">
-					<button class="btn btn-success dropdown-toggle" type="button"
+			<div class="dropdown">
+						<button class="btn btn-success dropdown-toggle" type="button"
 							id="dropdownMenuButton1" data-bs-toggle="dropdown"
 							aria-expanded="false">
-							<i class="fa-solid fa-circle-user"></i> Admin
+							<i class="fa-solid fa-circle-user"></i> ${managerobj.fullName }
 						</button>
-					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-						<li><a class="dropdown-item" href="../adminLogout">Logout</a></li>
-					</ul>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+							<li><a class="dropdown-item" href="changepassword1.jsp">Change Password</a></li>
+							<li><a class="dropdown-item" href="../mLogout">Logout</a></li>
+							
+						</ul>
 				</div>
 			
 		</div>
+		</c:if>
 	</div>
 </div>
+
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-custom ">
 
 	<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -52,16 +61,18 @@
 			<li class="nav-item active"><a class="nav-link" href="index.jsp"><i
 					class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
 			</li>
-				<li class="nav-item"><a class="nav-link active" href="manager.jsp">Add Maanger</a></li>
-				<li class="nav-item"><a class="nav-link active" href="view_manager.jsp">View Manager</a></li>
-				<li class="nav-item"><a class="nav-link active" href="view_course.jsp">View Course</a></li>
-				<li class="nav-item"><a class="nav-link active" href="view_customer.jsp">View user</a></li>
-				<li class="nav-item"><a class="nav-link active" href="contact.jsp">All Contact Us</a></li>
+				<li class="nav-item"><a class="nav-link active" href="product.jsp">Add Note</a></li>
+				<li class="nav-item"><a class="nav-link active" href="view_product.jsp">View Note</a></li>
+				<li class="nav-item"><a class="nav-link active" href="view_customer1.jsp">Add Video</a></li>
+				<li class="nav-item"><a class="nav-link active" href="view_product.jsp">View Video</a></li>
+
 
 		</ul>
 		<form class="form-inline my-2 my-lg-0">
 
-			<a href="../contactus.jsp" class="btn btn-light ">	<i class="fa-solid fa-phone"></i> Contact Us</a>
+			<button class="btn btn-light my-2 my-sm-0" type="submit">
+				<i class="fa-solid fa-phone"></i> Contact Us
+			</button>
 		</form>
 	</div>
 </nav>

@@ -23,7 +23,7 @@
 			<div class="col-md-4 offset-md-4">
 				<div class="card paint-card">
 					<div class="card-body">
-						<p class="fs-4 text-center">Admin Login</p>
+						<p class="fs-4 text-center">Login Credinital</p>
 						<c:if test="${not empty succMsg }">
 							<p class="text-center text-success fs-5">${succMsg}</p>
 							<c:remove var="succMsg" scope="session" />

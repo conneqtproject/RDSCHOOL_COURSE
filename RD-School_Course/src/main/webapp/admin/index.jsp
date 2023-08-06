@@ -59,7 +59,7 @@
 
 		
 
-			<div class="col-md-4 mt-2">
+			<div class="col-md-4">
 
 				<div class="card paint-card " data-bs-toggle="modal"
 					data-bs-target="#exampleModal">
@@ -89,11 +89,11 @@
 						aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					<form action="../addCategory" method="post">
+					<form action="../addCourse" method="post">
 
 						<div class="form-group">
 							<label>Add Course </label> <input type="text"
-								name="category" class="form-control">
+								name="course" class="form-control">
 						</div>
 						<div class="text-center mt-3">
 							<button type="submit" class="btn btn-primary">Add</button>
