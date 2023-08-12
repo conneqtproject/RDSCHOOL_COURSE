@@ -52,10 +52,12 @@
 			<li class="nav-item active"><a class="nav-link" href="index.jsp"><i
 					class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
 			</li>
-				<li class="nav-item"><a class="nav-link active" href="manager.jsp">Add Maanger</a></li>
+				<li class="nav-item"><a class="nav-link active" href="manager.jsp">Add Manager</a></li>
 				<li class="nav-item"><a class="nav-link active" href="view_manager.jsp">View Manager</a></li>
 				<li class="nav-item"><a class="nav-link active" href="view_course.jsp">View Course</a></li>
-				<li class="nav-item"><a class="nav-link active" href="view_customer.jsp">View user</a></li>
+				<li class="nav-item"><a class="nav-link active" href="view_user.jsp">View user</a></li>
+				<li class="nav-item"><a class="nav-link active" href="useracess.jsp">User Acess</a></li>
+				<li class="nav-item"><a class="nav-link active" href="view_useracess.jsp">View User Acess</a></li>
 				<li class="nav-item"><a class="nav-link active" href="contact.jsp">All Contact Us</a></li>
 
 		</ul>

@@ -30,6 +30,10 @@ public class ConnectionFactory {
 		config.setPassword(pwd);
 		config.setDriverClassName(driver);
 		config.setMaximumPoolSize(Integer.parseInt(poolsize));
+		config.setIdleTimeout(5000);
+		long connectionTimeout = config.getConnectionTimeout();
+		
+		System.out.println("Time Out: "+connectionTimeout);
 		
 		ds=new HikariDataSource(config);
 			 	 System.out.println("Connection Sucess");

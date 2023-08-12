@@ -59,12 +59,12 @@
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active"><a class="nav-link" href="index.jsp"><i
-					class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+					class="fas fa-home"></i> DashBoard <span class="sr-only">(current)</span></a>
 			</li>
-				<li class="nav-item"><a class="nav-link active" href="product.jsp">Add Note</a></li>
-				<li class="nav-item"><a class="nav-link active" href="view_product.jsp">View Note</a></li>
-				<li class="nav-item"><a class="nav-link active" href="view_customer1.jsp">Add Video</a></li>
-				<li class="nav-item"><a class="nav-link active" href="view_product.jsp">View Video</a></li>
+				<li class="nav-item"><a class="nav-link active" href="addnote.jsp">Add Note</a></li>
+				<li class="nav-item"><a class="nav-link active" href="viewNote.jsp">View Note</a></li>
+				<li class="nav-item"><a class="nav-link active" href="addVideo.jsp">Add Video</a></li>
+				<li class="nav-item"><a class="nav-link active" href="viewVideo.jsp">View Video</a></li>
 
 
 		</ul>

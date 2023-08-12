@@ -3,6 +3,7 @@
 
 
 
+
 <div class="container-fluid"
 	style="height: 10px; background-color: #303f9f"></div>
 
@@ -22,7 +23,7 @@
 			</form>
 		</div>
 		<div class="col-md-3">
-			<c:if test="${not empty userObj }">
+			<c:if test="${not empty userObj}">
 				<div class="dropdown">
 					<button class="btn btn-success dropdown-toggle" type="button"
 						id="dropdownMenuButton1" data-bs-toggle="dropdown"
@@ -35,14 +36,12 @@
 						<li><a class="dropdown-item" href="cLogout">Logout</a></li>
 					</ul>
 
-					<a href="cart.jsp" class="btn btn-success"><i
-						class="fa-sharp fa-solid fa-cart-shopping"></i> Cart Item</a>
-
+					
 
 
 				</div>
 			</c:if>
-			<c:if test="${empty userObj }">
+			<c:if test="${empty userObj}">
 				<div class="dropdown">
 					<a href="admin_login.jsp" class="btn btn-primary"><i
 						class="fa-solid fa-right-to-bracket"></i> Login</a>&nbsp
@@ -52,8 +51,17 @@
 
 
 
-			</c:if>
+			</c:if> </br>
+			<a href="https://chat.whatsapp.com/GvTqRZpogGh7wzLOwPVJfv"><i class="fab fa-whatsapp fa-2x" style="color: #25d366;"></i></a>&nbsp
+			<a href="https://chat.whatsapp.com/GvTqRZpogGh7wzLOwPVJfv"><i class="fab fa-instagram fa-2x" style="color: #ac2bac;"></i></a>&nbsp
+			<a href="https://chat.whatsapp.com/GvTqRZpogGh7wzLOwPVJfv"><i class="fab fa-facebook-f fa-2x" style="color: #3b5998;"></i></a>&nbsp
+			<a href="https://chat.whatsapp.com/GvTqRZpogGh7wzLOwPVJfv"><i class="fab fa-linkedin-in fa-2x" style="color: #0082ca;"></i></a>&nbsp
+			<a href="https://chat.whatsapp.com/GvTqRZpogGh7wzLOwPVJfv"><i class="fab fa-google fa-2x" style="color: #dd4b39;"></i></a>&nbsp
+			<a href="https://chat.whatsapp.com/GvTqRZpogGh7wzLOwPVJfv"><i class="fab fa-twitter fa-2x" style="color: #55acee;"></i></a>&nbsp
+			
+			<a href="https://chat.whatsapp.com/GvTqRZpogGh7wzLOwPVJfv"><i class="fab fa-youtube fa-2x" style="color: #ed302f;"></i></a>
 		</div>
+		
 	</div>
 </div>
 
@@ -75,13 +83,11 @@
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active"><a class="nav-link" href="index.jsp"><i
-					class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+					class="fas fa-home"></i> DashBoard <span class="sr-only">(current)</span></a>
 			</li>
-			<li class="nav-item active"><a class="nav-link"
-				href="all_product.jsp"><i class="fa-brands fa-product-hunt"></i>
-					Product</a></li>
-					<li class="nav-item active"><c:if test="${not empty customerobj }">
-			<a href="view_order.jsp" class="nav-link">Book List</a>
+					&nbsp&nbsp&nbsp
+					<li class="nav-item active"><c:if test="${not empty userObj }">
+			<a href="usercourse?email=${userObj.email }" class="nav-link"><i class="far fa-file-alt"></i> My Courses</a>
 	
 
 		</c:if></li>
@@ -89,7 +95,9 @@
 		</ul>
 		
 
-		<a href="contactus.jsp" class="btn btn-light ">	<i class="fa-solid fa-phone"></i> Contact Us</a>
+		<a href="contactus.jsp" class="btn btn-light">	<i class="fa-solid fa-phone"></i> Contact Us</a>
+		
+		&nbsp<a href="https://chat.whatsapp.com/GvTqRZpogGh7wzLOwPVJfv" class="btn btn-light "><i class="fab fa-whatsapp" style="color: #25d366;"></i>Whatsapp</a>&nbsp
 
 		
 	</div>
